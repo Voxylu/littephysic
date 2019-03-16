@@ -1,0 +1,7 @@
+node_modules/
+playground/
+lib/
+.gitingore
+jest.config.js
+tsconfig.json
+rs.js
