@@ -1,7 +1,7 @@
 import { CircleCollideElement } from '.'
 import { SegmentCollideElement, Point } from '../segment'
 
-class Vector2D {
+export class Vector2D {
   constructor(public x: number, public y: number) {}
 
   static fromPoints(A: Point, B: Point) {

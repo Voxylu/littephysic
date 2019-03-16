@@ -30,6 +30,8 @@ export class Segment implements SegmentCollideElement {
       return this.collideWithRectangle(other)
     } else if (other.shape === 'circle') {
       return other.collide(this)
+    } else if (other.shape === 'triangle') {
+      return other.collide(this)
     }
 
     console.error(

@@ -1,7 +1,8 @@
 node_modules/
 playground/
+.cache/
 lib/
-.gitingore
 jest.config.js
 tsconfig.json
+.gitingore
 rs.js

@@ -15,8 +15,14 @@ export class Circle implements CircleCollideElement {
       return this.collideWithRectangle(other)
     } else if (other.shape === 'segment') {
       return circleSegment(this, other)
+    } else if (other.shape === 'triangle') {
+      return other.collide(this)
     }
-    console.error(`collide(...) of ${this} not implemented with ${other}`)
+    console.error(
+      `collide(...) of ${JSON.stringify(
+        this
+      )} not implemented with ${JSON.stringify(other)}`
+    )
     return false
   }
 
